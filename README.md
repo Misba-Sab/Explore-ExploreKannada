@@ -1,2 +1,2 @@
 # Explore-ExploreKannada
-Website which explores places to explore
+Website which explores places for excursion
