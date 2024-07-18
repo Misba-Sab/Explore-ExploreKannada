@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}                   
+body{
+    height: 100%;
+    background:url(beach1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding: 20px; */
+    color:white;
+}
+h1{
+    text-align: center;
+    margin-top: 50PX;
+    font-size:xx-large;
+}
+hr{
+   border-width: 3px;
+   border-style: inset;
+}
+#board{
+    height: 532px;
+    width: 1300px;
+    margin-top:50px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 10px solid lightgrey;
+    opacity: 0.7;
+}
+div p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal;
+    font-size: 30px;
+    text-indent:13%;
+}
+div h1{
+    color: black;
+  padding-left: 550px;
+  padding-top: 20px;
+   
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    /* background-color: rgba(178, 92, 115, 0.74);*/
+    background: rgba(0,0,0,0.2);
+    
+}
+ul{
+    display: inline-block;
+    list-style: none;
+       text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    /* margin: 70px; */
+    padding:10px 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-family: sans-serif;
+}
+button{
+    border: rgba(229, 10, 94, 0.577);
+    color:rgb(203, 167, 49);
+    font-size: 18px;
+    background: none;
+}
+header nav ul li:hover{
+    background: rgba(0,0,0,0.3);
+   /* padding:10px; */
+    border-radius: 15px;
+}

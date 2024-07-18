@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add styles for your page here */
+      body {
+        background-color: lightgray;
+        font-family: Arial, sans-serif;
+        background-image: url(9.jpg);
+        margin: 0;
+      }
+      .navi{
+        height: 40.8;
+      }
+.navi nav{
+    flex: 1;
+    text-align: right;
+    /* background-color: rgba(178, 92, 115, 0.74);*/
+    background: rgba(0,0,0,0.2);
+    height:50.8px;
+    
+}
+.navi ul{
+    display: inline-block;
+    list-style: none;
+       text-align: center;
+}
+.navi nav ul li{
+    display: inline-block;
+    /* margin: 70px; */
+    padding:10px 50px;
+}
+.navi nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-family: sans-serif;
+}
+header .navi nav ul li:hover{
+    background: rgba(0,0,0,0.3); 
+    border-radius: 15px;
+}
+
+    .places .h1 {
+        text-align: center;
+        color:  green;
+        padding: 20px;
+        margin-top: 50px;
+        border-bottom: 2px solid navy;
+        border-radius: 10px;
+        font-size: 60px;
+        
+      }
+
+      .places ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .places li {
+        color: rgb(54, 19, 254);
+        width: 200px;
+        height: 100px;
+        margin: 20px;
+        background-color:#db9d9d ;
+        box-shadow: 2px 2px 5px #ccc;
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 27px;
+        border-radius: 10px;
+        position: relative;
+        background-image: url(1.jpg);
+      }
+
+      .places li::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgb(15, 17, 9);
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      .places {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      /* Add additional styles below */
+     .places li:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      .places li:active {
+        transform: translateY(10px);
+      }
+
+      /* .places li::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgb(214, 241, 107);
+        border-radius: 50%;
+        z-index: -1;
+      } */
+
+      /* Add new styles below */
+      .places {
+        background-color: rgba(255,255,255,0.7);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .places h1::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: navy;
+        margin: 20px auto;
+      }
+
+      .places h1::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: navy;
+        margin: 20px auto;
+      }
+      .places a{
+        color: rgb(7, 7, 17);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body><header><div class="navi">
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="place.html">Places</a></li>
+            <li><a href="contact_form.html">Contact Us</a></li>
+            <!-- <li><button><a href="loginhtml.php">Login</a></button></li> -->
+            <!-- <li><button class="">ADMIN</li> -->
+            </ul>
+    </nav>
+  </div>
+</header>
+   <center> <h1 style="color:black ; font-size: 50px;">List of Places</h1></center>
+    <div class="places">
+      <ul>
+     <strong>  <li> <a href="places/anshi national park/anshi.html">Anshi National Park</a></li></strong> 
+     <strong>   <li> <a href="places/apsarakonda falls/apsarakonda.html"> Apsarakonda Falls</a></li></strong> 
+      <strong> <li><a href="places/dandeli/dandeli.html">Dandeli</a></li></strong> 
+    <strong>  <li><a href="places/Dandeli Wildlife Sanctuary/dandeli.html">Dandeli Wildlife Sanctuary</a></li></strong> 
+    <strong>  <li><a href="places/gokarna/gokarna.html">Gokarna</a></li></strong> 
+     <strong>  <li><a href="places/honnemaradu/honnamaradu.html">Honnemaradu</a></li></strong> 
+     <strong>     <li><a href="places/idgunji/idgunji.html">Idgunji</a></li></strong> 
+    <strong>    <li><a href="places/kadra dam/kadra.html">Kadra Dam</a></li></strong> 
+     <strong>    <li><a href="places/karwar beach/karwar.html">Karwar Beach</a></li></strong> 
+     <strong>   <li><a href="places/kodasalli dam/kodasalli.html">Kodasalli Dam</a></li></strong> 
+      <strong>   <li><a href="places/kotiteertha/kotiteertha.html">Kotiteertha</a></li></strong> 
+   <strong> <li><a href="places/kudle beach/kudle.html">Kudle beach</a></li></strong> 
+    <strong> <li><a href="places/magod falls/magod.html">Magod Falls</a></li></strong> 
+  <strong>  <li><a href="places/marikamba temple/marikamb.html">Marikamba Temple</a></li></strong> 
+  <strong>  <li><a href="places/majali beach/majali.html">Majali Beach</a></li></strong> 
+  <strong><li><a href="places/mirjan fort/mirjan.html">Mirjan Fort</a></li></strong> 
+ <strong>  <li><a href="places/murdeshwar/murdeshwar.html">Murdeshwar</a></li></strong> 
+  <strong> <li><a href="places/netrani island/island.html">Netrani Island</a></li></strong> 
+  <strong>  <li><a href="places/sadashivgad port/port.html">Sadashivagada Port</a></li></strong> 
+  <strong>  <li><a href="places/sharavti backwaters/sharavati.html">Sharavati Backwaters</a></li></strong> 
+  <strong> <li><a href="places/shirali falls/shirali.html">Shirali Falls</a></li></strong> 
+  <strong> <li><a href="places/shivaganga falls/shivaganga.html">Shivaganga Falls</a></li></strong> 
+  <strong>  <li><a href="places/dandeli/dandeli.html">Supa Dam</a></li></strong> 
+  <strong>  <li><a href="places/unchalli waterfalls/unchalli.html">Unchalli Waterfalls</a></li></strong> 
+  <strong> <li><a href="places/warship museum/warship.html">Worship Museum</a></li></strong> 
+  <strong>  <li><a href="places/yana/yana.html">Yana</a></li></strong> 
+        
+        </ul>
+        </div>
+       
+  </body></html>

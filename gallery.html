@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+   </head>
+<body> 
+    <header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="place.html">Places</a></li>
+            <li><a href="contact_form.html">Contact Us</a></li>
+            <!-- <li><button><a href="loginhtml.php">Login</a></button></li> -->
+            <!-- <li><button class="">ADMIN</li> -->
+            </ul>
+    </nav>
+</header>
+  <div class="container">
+    <h1>IMAGE Gallery</h1>
+    <div class="image-container">
+        <div class="image"><img src="gallery1.jpg" alt=""></div>
+        <div class="image"><img src="gallery2.jpg" alt=""></div>
+        <div class="image"><img src="gallery3.jpg" alt=""></div>
+        <div class="image"><img src="gallery4.jpg" alt=""></div>
+        <div class="image"><img src="gallery5.jpg" alt=""></div>
+        <div class="image"><img src="gallery6.jpg" alt=""></div>
+        <div class="image"><img src="gallery7.jpg" alt=""></div>
+        <div class="image"><img src="gallery8.jpg" alt=""></div>
+        <div class="image"><img src="gallery9.jpg" alt=""></div>
+        <div class="image"><img src="gallery10.jpg" alt=""></div>
+        <div class="image"><img src="gallery11.jpg" alt=""></div>
+        <div class="image"><img src="gallery12.jpg" alt=""></div>
+        <div class="image"><img src="gallery13.jpg" alt=""></div>
+        <div class="image"><img src="gallery14.jpg" alt=""></div>
+        <div class="image"><img src="gallery15.jpg" alt=""></div>
+        <div class="image"><img src="gallery16.jpg" alt=""></div>
+        <div class="image"><img src="gallery17.jpg" alt=""></div>
+        <div class="image"><img src="gallery18.jpg" alt=""></div>
+        <div class="image"><img src="gallery19.jpg" alt=""></div>
+        <div class="image"><img src="gallery20.jpg" alt=""></div>
+        <div class="image"><img src="gallery21.jpg" alt=""></div>
+        <div class="image"><img src="gallery22.jpg" alt=""></div>
+        <div class="image"><img src="gallery23.jpg" alt=""></div>
+        <div class="image"><img src="gallery24.jpg" alt=""></div>
+    </div>
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="gallery1.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.image-container img').forEach(image =>{
+        image.onclick = () =>{
+        document.querySelector('.popup-image').style.display ='block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+          }
+    })
+    document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display ='none'; 
+    }
+  </script>
+</body>
+</html>
